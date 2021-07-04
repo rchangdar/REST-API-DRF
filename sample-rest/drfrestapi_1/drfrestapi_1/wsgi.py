@@ -1,4 +1,4 @@
-""" This file have to modify"""
+""" This file have to modify...."""
 """
 WSGI config for drfrestapi_1 project.
 
