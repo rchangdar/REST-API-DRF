@@ -6,9 +6,10 @@ from rest_framework.renderers import JSONRenderer
 from rest_framework.serializers import Serializer
 from .serializers import EmployeeSerializer
 from django.http import HttpResponse
-
+from django.views.decorators.csrf import csrf_exempt
 # Create your views here.
 
+@csrf_exempt
 def employee_create(request):#this method to insert records for the json schema
     if request.method == 'POST':#applicable only for post method
         json_data = request.body#whatever the body take it 

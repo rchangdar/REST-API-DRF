@@ -1,13 +1,14 @@
 import requests
 import json
-URL = "http://127.0.0.1:8000/admin/api/employee/"
+
+URL = "http://127.0.0.1:8000/empcreate/"
 
 data = {
     
-    'empid' : '111000',
-    'name':'Krishnendu Jana',
-    'city':'Allahabad',
-    'zip':894523
+    'empid' : 2569032,
+    'name':'Soura Das',
+    'city':'Delhi',
+    'zip':349656
 }
 
 # Need to convert python dictionary into json
@@ -15,6 +16,6 @@ data = {
 json_data = json.dumps(data)
 
 r = requests.post(url = URL, data = json_data)
-data = r.json()
+#data = r.json()
 
-print(data) 
+#print(data) 
