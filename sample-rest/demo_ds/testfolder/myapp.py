@@ -5,10 +5,10 @@ URL = "http://127.0.0.1:8000/empcreate/"
 
 data = {
     
-    'empid' : 2569032,
-    'name':'Soura Das',
-    'city':'Delhi',
-    'zip':349656
+    'empid' : 2569038,
+    'name':'Sanket Kumar',
+    'city':'Patna',
+    'zip':340001
 }
 
 # Need to convert python dictionary into json
